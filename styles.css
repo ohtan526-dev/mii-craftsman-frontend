@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+body {
+  background-color: #FFFDF0;
+  background-image: radial-gradient(#FFE8A3 15%, transparent 16%);
+  background-size: 24px 24px;
+  color: #4A3B32;
+}
+
+.nintendo-app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.game-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.logo-badge {
+  display: inline-block;
+  background: #FF9800;
+  color: #FFF;
+  font-size: 28px;
+  font-weight: 800;
+  padding: 10px 28px;
+  border-radius: 40px;
+  box-shadow: 0 6px 0 #E65100, 0 10px 15px rgba(0,0,0,0.1);
+  letter-spacing: 1px;
+}
+
+.sub-title {
+  margin-top: 10px;
+  font-size: 15px;
+  color: #795548;
+  font-weight: 700;
+}
+
+/* Main Grid */
+.game-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+@media (max-width: 768px) {
+  .game-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Card Styling */
+.card {
+  background: #FFFFFF;
+  border: 4px solid #FFE082;
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 8px 0 #FFD54F, 0 12px 20px rgba(0,0,0,0.06);
+}
+
+.card-header {
+  font-size: 20px;
+  font-weight: 800;
+  color: #E65100;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Upload Box */
+.upload-box {
+  position: relative;
+  background: #FFF9C4;
+  border: 3px dashed #FBC02D;
+  border-radius: 20px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+
+.photo-preview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.file-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.btn-small {
+  display: inline-block;
+  margin-top: 10px;
+  background: #FFB74D;
+  color: #FFF;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+/* Options */
+.option-group {
+  margin-bottom: 20px;
+}
+
+.option-label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #5D4037;
+}
+
+.radio-group {
+  display: flex;
+  gap: 12px;
+}
+
+.pop-chip {
+  flex: 1;
+  padding: 10px;
+  border: 3px solid #E0E0E0;
+  background: #FAFAFA;
+  border-radius: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pop-chip.active {
+  background: #FFF3E0;
+  border-color: #FF9800;
+  color: #E65100;
+  box-shadow: 0 4px 0 #FB8C00;
+}
+
+/* Buttons */
+.game-btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: 800;
+  color: #FFF;
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.primary-btn {
+  background: #4CAF50;
+  box-shadow: 0 6px 0 #2E7D32, 0 8px 12px rgba(0,0,0,0.15);
+}
+
+.primary-btn:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 #2E7D32;
+}
+
+/* Recipe Output */
+.key-points-box {
+  background: #E8F5E9;
+  border-left: 6px solid #4CAF50;
+  padding: 14px;
+  border-radius: 12px;
+  margin-bottom: 18px;
+}
+
+.key-points-box h4 {
+  color: #2E7D32;
+  margin-bottom: 8px;
+}
+
+.key-points-box ul {
+  list-style: none;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.parts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.part-tile {
+  background: #FFF8E1;
+  border: 2px solid #FFE082;
+  border-radius: 16px;
+  padding: 12px;
+}
+
+.part-tag {
+  font-size: 12px;
+  font-weight: 800;
+  color: #FB8C00;
+}
+
+.part-code {
+  font-size: 20px;
+  font-weight: 800;
+  color: #3E2723;
+  margin: 4px 0;
+}
+
+.part-desc {
+  font-size: 12px;
+  color: #6D4C41;
+}
+
+.empty-recipe {
+  text-align: center;
+  padding: 40px 20px;
+  color: #A1887F;
+}
+
+.mii-avatar-placeholder {
+  font-size: 64px;
+  margin-bottom: 12px;
+}
+
+.game-footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 13px;
+  color: #8D6E63;
+}
